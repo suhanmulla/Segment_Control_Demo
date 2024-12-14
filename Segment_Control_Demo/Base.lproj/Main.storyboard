@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tr7-Aj-iOQ">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Segment_Control_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="6Rp-P6-XWl">
+                                <rect key="frame" x="20" y="159" width="353" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="LcD-TF-rsz"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                    <segment title="Fourth"/>
+                                </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="segmentClick:" destination="BYZ-38-t0r" eventType="valueChanged" id="21Y-9C-59U"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkC-XQ-GVz">
+                                <rect key="frame" x="20" y="319" width="353" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dK0-S2-NCo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xkC-XQ-GVz" firstAttribute="top" secondItem="6Rp-P6-XWl" secondAttribute="bottom" constant="100" id="EBy-B4-63E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xkC-XQ-GVz" secondAttribute="trailing" constant="20" id="Ebh-wN-SKT"/>
+                            <constraint firstItem="6Rp-P6-XWl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="HUT-Uu-LMa"/>
+                            <constraint firstItem="6Rp-P6-XWl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="drP-5M-ywJ"/>
+                            <constraint firstItem="xkC-XQ-GVz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wMQ-Rx-iWT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Rp-P6-XWl" secondAttribute="trailing" constant="20" id="yiH-FD-8fC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="xkC-XQ-GVz" id="u3H-ms-XFK"/>
+                        <outlet property="segment1" destination="6Rp-P6-XWl" id="bhh-GF-ZmL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="-27"/>
+        </scene>
+        <!--Seg Control Image View Controller-->
+        <scene sceneID="SSN-er-2wI">
+            <objects>
+                <viewController storyboardIdentifier="Seg_Control_ImageViewController" id="tr7-Aj-iOQ" customClass="Seg_Control_ImageViewController" customModule="Segment_Control_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JsB-Vl-phw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="sP9-mn-ykk">
+                                <rect key="frame" x="20" y="159" width="353" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DuF-vA-Ok9"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Dosa"/>
+                                    <segment title="PavBhaji"/>
+                                    <segment title="Samosaa"/>
+                                    <segment title="VadaPav"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentClicked:" destination="tr7-Aj-iOQ" eventType="valueChanged" id="cYN-Dd-4Pf"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q5d-0a-6YM">
+                                <rect key="frame" x="20" y="309" width="353" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="ZJq-Jt-Tva"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVO-RC-fvQ">
+                                <rect key="frame" x="20" y="579" width="353" height="50"/>
+                                <color key="backgroundColor" red="0.94979881990000004" green="0.26667525320000002" blue="0.26439560449999999" alpha="0.64000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XFs-Ja-Jmw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3d8-LE-LxJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fVO-RC-fvQ" firstAttribute="leading" secondItem="3d8-LE-LxJ" secondAttribute="leading" constant="20" id="03I-4Y-gLg"/>
+                            <constraint firstItem="q5d-0a-6YM" firstAttribute="top" secondItem="sP9-mn-ykk" secondAttribute="bottom" constant="100" id="8cC-ga-Ey6"/>
+                            <constraint firstItem="sP9-mn-ykk" firstAttribute="leading" secondItem="3d8-LE-LxJ" secondAttribute="leading" constant="20" id="JCC-Tl-Cy1"/>
+                            <constraint firstItem="3d8-LE-LxJ" firstAttribute="trailing" secondItem="fVO-RC-fvQ" secondAttribute="trailing" constant="20" id="OMY-8i-mrC"/>
+                            <constraint firstItem="3d8-LE-LxJ" firstAttribute="trailing" secondItem="q5d-0a-6YM" secondAttribute="trailing" constant="20" id="U3g-Fn-yeB"/>
+                            <constraint firstItem="fVO-RC-fvQ" firstAttribute="top" secondItem="q5d-0a-6YM" secondAttribute="bottom" constant="70" id="YsM-sw-GWS"/>
+                            <constraint firstItem="q5d-0a-6YM" firstAttribute="leading" secondItem="3d8-LE-LxJ" secondAttribute="leading" constant="20" id="ZeL-kI-edl"/>
+                            <constraint firstItem="sP9-mn-ykk" firstAttribute="top" secondItem="3d8-LE-LxJ" secondAttribute="top" constant="100" id="ct5-lk-euv"/>
+                            <constraint firstItem="3d8-LE-LxJ" firstAttribute="trailing" secondItem="sP9-mn-ykk" secondAttribute="trailing" constant="20" id="e9S-xF-gq2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgView1" destination="q5d-0a-6YM" id="Kxf-UE-Rxp"/>
+                        <outlet property="label1" destination="fVO-RC-fvQ" id="V8A-oG-1CM"/>
+                        <outlet property="segment1" destination="sP9-mn-ykk" id="tVP-rb-NYV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h7y-n7-WSh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
